@@ -96,7 +96,7 @@ nav ul li a:after {
 }
 
 nav ul li a:hover:after { 
-  width: 100%; 
+    width: 100%; 
 }
 
 
@@ -130,8 +130,8 @@ nav ul li a:hover {
 	padding: 340px 20px;
 	text-align: center;
 	background: linear-gradient(
-     rgba(39, 3, 76, 0.7),
-     rgba(45, 47, 51, 0.4)
+    rgba(39, 3, 76, 0.7),
+    rgba(45, 47, 51, 0.4)
     ), url('../images/hero-bg.jpg');
 	@include centerbg;
 }

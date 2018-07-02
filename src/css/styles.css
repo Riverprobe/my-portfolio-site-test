@@ -1,0 +1,397 @@
+@charset "UTF-8";
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+  font-weight: 900; }
+
+a {
+  text-decoration: none !important;
+  cursor: pointer; }
+
+h2 {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 50px; }
+
+.absolute--link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99; }
+
+nav {
+  padding-top: 0 !important; }
+
+header {
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  z-index: 99; }
+
+nav ul {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 10px auto; }
+
+nav ul li a {
+  padding: 0 !important;
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+  transition: all 0.5s; }
+
+nav ul li a:after {
+  content: '';
+  display: block;
+  border-bottom: 3px solid yellow;
+  width: 0;
+  position: absolute;
+  left: 0;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  border-radius: 15px;
+  transition: all 0.5s; }
+
+nav ul li a:hover:after {
+  width: 100%; }
+
+nav ul li a:hover {
+  color: yellow !important; }
+
+.split-col,
+.full-col {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px; }
+
+.split-col {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.split--col-2 {
+  max-width: 600px;
+  margin: auto;
+  width: 49%; }
+
+/******* HERO ROW ********/
+.hero--row {
+  position: relative;
+  padding: 340px 20px;
+  text-align: center;
+  background: linear-gradient(rgba(39, 3, 76, 0.7), rgba(45, 47, 51, 0.4)), url("../images/hero-bg.jpg");
+  background-position: center center;
+  background-size: cover; }
+
+.hero--row h1 {
+  max-width: 600px;
+  width: 100%;
+  margin: auto;
+  font-size: 61px;
+  color: #fff;
+  line-height: 1.5; }
+
+.hero--row a {
+  position: absolute;
+  bottom: 50px;
+  z-index: 99;
+  left: 0;
+  right: 0; }
+
+@keyframes arrowGlow {
+  0% {
+    font-size: 100px;
+    color: #fff; }
+  50% {
+    font-size: 110px;
+    color: yellow; }
+  100% {
+    font-size: 100px;
+    color: #fff; } }
+
+.hero--row .fa {
+  color: #fff;
+  font-size: 100px;
+  animation: arrowGlow 2s ease-in-out 0s infinite; }
+
+/********** ABOUT ROW **********/
+.about--row {
+  text-align: center;
+  background: linear-gradient(#2d2f33, #27034c);
+  padding: 50px 20px; }
+
+.about--row h4,
+.about--row h5,
+.about--row p {
+  text-align: center;
+  max-width: 1200px;
+  margin: 10px auto; }
+
+.about--row img {
+  padding-top: 30px; }
+
+/******* PROJECTS ROW ********/
+.projects--row {
+  background: #27034c;
+  padding: 30px 20px 60px 20px; }
+
+.projects--row h2::before {
+  font-family: 'FontAwesome';
+  margin-right: 15px;
+  content: ""; }
+
+.projects--row h5 {
+  text-align: center;
+  margin-bottom: 40px; }
+
+.projects--col {
+  margin: auto; }
+
+.projects--row h2 {
+  margin-bottom: 50px; }
+
+.project--boxes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  max-width: 1200px; }
+
+.project--box {
+  width: 32%;
+  margin: 15px auto;
+  background: url(/images/fpb.png);
+  height: 300px;
+  border: 2px solid #fff;
+  position: relative;
+  transition: all 0.5s;
+  margin-bottom: 70px; }
+
+.box-two {
+  background: url(/images/swanky-1.png); }
+
+.box-three {
+  background: url(/images/icf-cover.png); }
+
+.box-four {
+  background: url(/images/viadent-cover.png); }
+
+.box-five {
+  background: url(/images/majnaric-cover.png); }
+
+.project--box {
+  background-position: center center;
+  background-size: cover; }
+
+.project--box:hover {
+  border: 2px solid #ffff00;
+  margin-top: -20px;
+  box-shadow: 0px 25px 50px 0 #000; }
+
+.project--box:hover h4 {
+  color: #ffff00; }
+
+.project--box h4 {
+  text-align: center;
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  right: 0;
+  font-weight: 900; }
+
+.button-container {
+  text-align: center; }
+
+.button-container a {
+  color: #fff !important;
+  font-weight: 900;
+  font-size: 20px;
+  border: 2px solid #fff !important;
+  border-radius: 5px;
+  padding: 10px 30px;
+  transition: all 0.5s; }
+
+.button-container a:hover {
+  background: #fff !important;
+  color: #27034c !important;
+  border: 2px solid #27034c !important; }
+
+/********** SKILLS ROW **********/
+.skills--row {
+  background-color: #211820;
+  padding: 40px 20px; }
+
+.skills--row h2::before {
+  font-family: 'FontAwesome';
+  margin-right: 15px;
+  content: ""; }
+
+.skill-boxes {
+  max-width: 750px;
+  margin: auto; }
+
+.skill-box {
+  display: flex;
+  align-items: center; }
+
+.skill-box h4 {
+  font-size: 20px;
+  display: inline-block;
+  width: 200px;
+  margin-right: 5px;
+  padding-left: 10px;
+  background-color: #1ebc6a;
+  color: #000;
+  transition: all 0.15s;
+  border: 1px solid #1ebc6a; }
+
+.skill-box span {
+  border: 1px solid #1ebc6a;
+  border-radius: 2px;
+  width: 20px;
+  padding: 11px 25px;
+  background-color: #1ebc6a;
+  margin-right: 2px;
+  transition: all 0.15s;
+  margin-bottom: 8px; }
+
+.skill-box h4:hover,
+.skill-box span:hover {
+  border: 1px solid #fff; }
+
+.skill-box .transparent-box {
+  background: transparent; }
+
+/********** EDUCATION ROW **********/
+.education--row {
+  background: #27034c;
+  padding: 30px 20px 60px 20px; }
+
+.education--row h2::before {
+  font-family: 'FontAwesome';
+  margin-right: 15px;
+  content: ""; }
+
+.school-boxes {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap; }
+
+.school-boxes > div {
+  width: 32%; }
+
+.codeschool-col {
+  text-align: center;
+  margin-bottom: 50px; }
+
+.udemy-col img,
+.treehouse-col img,
+.codeschool-col img {
+  width: 380px;
+  margin-bottom: 30px; }
+
+.codeschool-col > img {
+  padding-top: 15px; }
+
+.achievement-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 300px;
+  margin: 15px auto; }
+
+.achievement-box img {
+  width: 24%; }
+
+.treehouse-col > img {
+  margin-bottom: 10px; }
+
+.treehouse-col h4 {
+  margin: 10px auto;
+  text-align: center; }
+
+.udemy-col {
+  text-align: center; }
+
+.udemy-col img {
+  width: 80px;
+  padding-top: 20px;
+  margin-bottom: 47px; }
+
+#fccLogo {
+  width: 400px;
+  margin-bottom: 0; }
+
+/********** GOALS ROW **********/
+.goals--row {
+  background-color: #211820;
+  padding: 40px 20px; }
+
+.goals--row h2::before {
+  font-family: 'FontAwesome';
+  margin-right: 15px;
+  content: ""; }
+
+.goal-boxes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.goal-box {
+  width: 32%;
+  border: 1px solid #fff;
+  height: 200px;
+  text-align: center;
+  position: relative;
+  margin: 10px auto; }
+
+.goal-box h4 {
+  padding-top: 10px;
+  max-width: 350px;
+  margin: 0 auto 30px auto; }
+
+.goal-box h3 {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+  font-size: 40px; }
+
+.goal-box h6 {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0; }
+
+/********** CAREER ROW **********/
+.career--row {
+  background: #27034c;
+  padding: 40px 20px; }
+
+.flickity-viewport {
+  height: 200px; }
+
+.carousel-cell {
+  background: url("../images/course3.png");
+  background-position: center center;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  right: 0;
+  margin: auto; }
